@@ -1,20 +1,23 @@
+// Задание 1
 const navitEl = document.querySelectorAll(".item").length;
 console.log(`В списке ${navitEl} категории`);
 
-const nameCat1 = document.querySelector(".сategory1");
-console.log("Категория:",nameCat1.textContent);
+const categoryEl = document.querySelectorAll(".item");
 
-const list1El = document.querySelector(".item-сategory1");
-console.log(`Количество элементов ${list1El.children.length}`);
+console.log("Категория:", categoryEl[0].firstElementChild.textContent);
+const countEl1 = categoryEl[0].lastElementChild.children.length;
+console.log("Количество элементов:", countEl1);
 
-const nameCat2 = document.querySelector(".сategory2");
-console.log("Категория:", nameCat2.textContent);
+console.log("Категория:", categoryEl[1].firstElementChild.textContent);
+const countEl2 = categoryEl[1].lastElementChild.children.length;
+console.log("Количество элементов:", countEl2);
 
-const list2El = document.querySelector(".item-сategory2");
-console.log(`Количество элементов ${list2El.children.length}`);
+console.log("Категория:", categoryEl[2].firstElementChild.textContent);
+const countEl3 = categoryEl[2].lastElementChild.children.length;
+console.log("Количество элементов:", countEl3);
 
-const nameCat3 = document.querySelector(".сategory3");
-console.log("Категория:", nameCat3.textContent);
 
-const list3El = document.querySelector(".item-сategory3");
-console.log(`Количество элементов ${list3El.children.length}`);
+
+
+
+
