@@ -31,3 +31,13 @@ for (let i = 0; i < images.length; i++) {
 
 console.log(galleryEl);
 
+
+
+/*const ulElement = document.querySelector('#gallery');
+const imageMake = images.map(image => {
+  return `<li><img class="img" src="${image.url}" alt="${image.alt}" /></li>`;
+});
+const imageMakeJoin = imageMake.join('');
+ulElement.insertAdjacentHTML('beforeend', imageMakeJoin);
+console.log(ulElement);*/
+
