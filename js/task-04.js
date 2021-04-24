@@ -4,6 +4,8 @@
 // Создай функции increment и decrement для увеличения и уменьшения значения счетчика
 // Добавь слушатели кликов на кнопки, вызовы функций и обновление интерфейса
 
+
+
 const spanvalue = document.querySelector("#value");
 const buttonIncrement = document.querySelector('#counter').lastElementChild;
 const buttonDecrement = document.querySelector('#counter').firstElementChild;
