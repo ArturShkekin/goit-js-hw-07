@@ -20,24 +20,20 @@ const images = [
 const galleryEl = document.querySelector("#gallery");
 galleryEl.classList.add("gallery");
 
-for (let i = 0; i < images.length; i++) {
-    const imageEl = document.createElement("img");
-    imageEl.src = images[i].url;
-    imageEl.alt = images[i].alt;
+images.forEach(image => {
+  const imageEl = document.createElement("img");
+    imageEl.src = image.url;
+    imageEl.alt = image.alt;
     imageEl.classList.add("imwi");
     galleryEl.insertAdjacentHTML("afterbegin", "<li></li> ");
     galleryEl.firstElementChild.append(imageEl);
-}
-
-console.log(galleryEl);
+})
 
 
-
-/*const ulElement = document.querySelector('#gallery');
-const imageMake = images.map(image => {
-  return `<li><img class="img" src="${image.url}" alt="${image.alt}" /></li>`;
+/*const imageEl = images.map(image => {
+  return `<li><img class="imwi" src="${image.url}" alt="${image.alt}" /></li>`;
 });
-const imageMakeJoin = imageMake.join('');
-ulElement.insertAdjacentHTML('beforeend', imageMakeJoin);
-console.log(ulElement);*/
+const imageJoin = imageEl.join('');
+galleryEl.insertAdjacentHTML('beforeend', imageJoin);
+console.log(galleryEl);*/
 
