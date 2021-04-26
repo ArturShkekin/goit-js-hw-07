@@ -10,6 +10,6 @@ input.addEventListener("blur", onInputBlur);
 
 function onInputBlur(event) {
     event.currentTarget.value.length === Number(input.getAttribute("data-length"))
-        ? event.currentTarget.classList.add("valid")
+        ?  event.currentTarget.classList.add("valid")
         : event.currentTarget.classList.add("invalid");
 }
