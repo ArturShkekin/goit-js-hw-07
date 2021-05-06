@@ -28,20 +28,11 @@ const images = [
 const galleryEl = document.querySelector("#gallery");
 galleryEl.classList.add("gallery");
 
-images.forEach(image => {
-  const imageEl = document.createElement("img");
-    imageEl.src = image.url;
-    imageEl.alt = image.alt;
-    imageEl.classList.add("imwi");
-    galleryEl.insertAdjacentHTML("afterbegin", "<li></li> ");
-    galleryEl.firstElementChild.append(imageEl);
-})
-
-
-/*const imageEl = images.map(image => {
+const imageEl = images.map(image => {
   return `<li><img class="imwi" src="${image.url}" alt="${image.alt}" /></li>`;
 });
-const imageJoin = imageEl.join('');
-galleryEl.insertAdjacentHTML('beforeend', imageJoin);
-console.log(galleryEl);*/
+
+const imageAll = imageEl.join('');
+galleryEl.insertAdjacentHTML('beforeend', imageAll);
+
 

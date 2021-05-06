@@ -4,14 +4,18 @@
 
 
 
+
+
+
+/*function sizeControl(event) {
+    span.style.fontSize = `${event.currentTarget.value}px`;
+};*/
+
 const input = document.querySelector("#font-size-control");
 const span = document.querySelector("#text");
 
-input.addEventListener("input", sizeControl);
-
-function sizeControl(event) {
-    span.style.fontSize = `${event.currentTarget.value}px`;
+const sizeControl = (event) => {
+    span.style.fontSize = `${event.currentTarget.value}px`
 };
-
-
+input.addEventListener("input", sizeControl);
 

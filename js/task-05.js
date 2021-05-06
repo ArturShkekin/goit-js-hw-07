@@ -9,6 +9,7 @@ input.addEventListener("input", onChange);
 function onChange(event) {
     if (input.value === "") {
         output.textContent = "незнакомец";
+        return;
     }
     output.textContent = event.currentTarget.value;
 }
